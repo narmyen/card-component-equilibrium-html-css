@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+html{
+  font-size: calc(60% + 0.8vmin);
+}
+
+body{
+  background-color: hsl(217, 54%, 11%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  border: 30px solid hsl(216, 50%, 16%);
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px;
+  width: 400px;
+  min-width: 400px;
+  /* width: 26%; */
+  max-height: 600px;
+}
+
+.main-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.main-img img{
+  width: 100%;
+}
+
+.main-info{
+  display: block;
+}
+
+.main-info h1{
+  font-family: 'Outfit', sans-serif;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.main-info p{
+  color: hsl(215, 51%, 70%);
+  opacity: 0.65;
+  font-family: 'Inter', sans-serif;  padding-bottom: 1rem;
+}
+
+.left-right-main-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-main-info{
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-main-info img{
+  margin-right: 6px;
+}
+
+.left-main-info span{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+}
+
+.right-main-info{
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsl(215, 51%, 70%);
+  opacity: 0.65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-main-info img{
+  margin-right: 6px;
+}
+
+.right-main-info span{
+  font-size: 16px;
+}
+
+.main-info{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsla(215, 51%, 70%,0.20);
+}
+
+.owner{
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.owner img{
+  width: 10%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.position-owner{
+  color: hsl(215, 51%, 70%);
+  opacity: 0.65;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.owner-name{
+  color: hsl(0, 0%, 100%);
+  opacity: 0.65;
+  font-size: 13px;
+  
+}
+
+@media screen and (max-width:375px){
+  
+  .card{
+    min-width: 300px;
+  }
+
+  .main-info p{
+    font-size: 13px;
+  }
+  
+  .main-info span{
+    font-size: 12px;
+  }
+
+  .main-info h1{
+    font-size: 16px;
+  }
+}
